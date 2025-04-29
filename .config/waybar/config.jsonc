@@ -1,0 +1,36 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces", "custom/waypaper"],
+    "modules-center": ["clock"],
+    "modules-right": ["custom/spotify"],
+
+    "workspaces": {
+        "format": "{name}",
+        "on-click": "hyprctl dispatch workspace {name}",
+        "tooltip": false
+    },
+
+ 
+    "clock": {
+        "format": "<span foreground='#f5c2e7'> </span>{:%a %d %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "custom/spotify": {
+        "format": "<span foreground='#c3e88d'>  </span>{}",
+        "max-length": 40,
+        "interval": 5,
+        "exec": "~/.config/waybar/scripts/spotify.sh",
+        "return-type": "text"
+    },
+
+    "custom/waypaper": {
+        "format": "  Wallpaper",
+        "exec": "~/.config/waybar/scripts/waypaper.sh",
+        "interval": 60,
+        "return-type": "text"
+    }
+
+}
+

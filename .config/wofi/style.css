@@ -1,0 +1,56 @@
+/* Tokyo Night inspired style */
+
+window {
+  margin: 5px;
+  background-color: #1a1b26; /* deep background */
+  color: #c0caf5; /* soft foreground */
+  font-family: "Hack Nerd Font";
+  font-size: 16px;
+}
+
+#entry {
+  padding: 12px;
+  margin: 6px;
+  background-color: #24283b; /* tokyo night dark bg */
+  border-bottom: 8px solid #1f2335;
+  border-radius: 6px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+#entry:hover {
+  background-color: #2d3149;
+  cursor: pointer;
+}
+
+#entry:selected {
+  background-color: #7aa2f7; /* Tokyo Night blue */
+  color: #1a1b26;
+  border-bottom: 8px solid #565f89;
+  border-radius: 6px;
+}
+
+#input {
+  border: 3px solid #1f2335;
+  background-color: #1a1b26;
+  color: #c0caf5;
+  padding: 10px;
+  border-radius: 0px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#input:focus {
+  border-color: #7aa2f7; /* Highlight on focus */
+  outline: none;
+}
+
+/* Optional cool touches */
+#entry:selected::before {
+  content: "➤ ";
+  color: #bb9af7; /* Purple accent */
+}
+
+#entry:not(:selected):hover::before {
+  content: "➤ ";
+  color: #7dcfff; /* Cyan accent on hover */
+}
+

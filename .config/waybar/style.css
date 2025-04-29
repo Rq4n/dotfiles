@@ -1,0 +1,82 @@
+* {
+    border: none;
+    font-family: "Hack Nerd Font";
+    font-size: 15px;
+    background: transparent;
+    color: #c0caf5;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.85); /* fundo tokyo night */
+    padding: 6px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Workspaces */
+#workspaces button {
+    background-color: #7aa2f7;
+    border-bottom:8px solid;
+    border-radius:5px;
+    border-color:#5e8ef2;
+    color: #1a1b26;
+    padding: 6px 10px;
+    margin: 0 6px;
+    transition: all 0.2s ease-in-out;
+}
+#workspaces button.active {
+	background-color:#5483e8;
+	border-bottom:8px solid;
+	border-radius:5px;
+	border-color:#4578e6;
+	color:#1a1b26;
+}
+#workspaces button:hover {
+    background-color: #7aa2f7;
+    color: #1a1b26;
+}
+
+/* Clock */
+#clock {
+    background-color: #7aa2f7;
+    color:#1a1b26;
+    padding: 6px 12px;
+    margin: 0 6px;
+    border-bottom: 8px solid;
+    border-radius: 5px;
+    border-color:#5e8ef2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Spotify */
+#custom-spotify {
+    background-color: #7aa2f7;
+    color: #1a1b26;
+    border-bottom:8px solid;
+    border-radius:5px;
+    border-color:#5e8ef2;
+    padding: 6px 12px;
+    margin: 0 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+#custom-poweroff {
+  color: red;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+/* Waypaper */
+#custom-waypaper {
+    background-color: #7aa2f7;
+    color: #1a1b26;
+    padding: 6px 12px;
+    margin: 0 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#custom-waypaper:hover {
+    background-color: #82aaff;
+    color: #1a1b26;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+

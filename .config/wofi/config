@@ -1,0 +1,24 @@
+# ~/.config/wofi/config
+
+# General
+show = drun
+prompt = Search:
+insensitive = true
+allow_markup = true
+term = foot
+hide_scroll = false
+
+# Appearance
+width = 500
+lines = 10
+columns = 1
+location = center
+padding = 10
+border = 2
+dynamic_lines = false
+
+# Behavior
+always_parse_args = true
+allow_images = true
+gtk_dark = true
+
